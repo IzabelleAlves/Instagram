@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet"
+/>
+
+<title>Instagram</title>
+
+</head>
+<body>
+  <main>
+    <div class="container-position">
+      <div class="post-container">
+        <div class="post-header">
+          <div class="avatar-user">
+            <div class="avatar">
+              <img src="https://media.licdn.com/dms/image/v2/D4D03AQFlR2o9nmgq3A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713298906900?e=1730937600&v=beta&t=5bqZqYKZn8wO8eK1PU3GMTnS4m1vhYnwinXZ337_LYE" alt=""/>
+            </div>
+            <span>user_name</span>
+          </div>
+              <div id="btn-follow" class="follow-options" onclick="follow()">
+                <div class="follow">Follow</div>
+                <div>...</div>
+              </div>
+        </div>
+
+        <div class="post-image">
+          <img src="https://img.freepik.com/vetores-gratis/instagram-logo_1199-122.jpg" alt="">
+        </div>
+
+        <div class="post-icons">
+          <div>
+            <div id="btn-like" onclick="like()">
+              <i class="fa fa-heart-o"></i>
+            </div>
+
+            <div>
+              <i class="fa fa-comment-o"></i>
+            </div>
+
+            <div>
+              <i class="fa fa-send-o"></i>
+            </div>
+          </div>
+            <div id="btn-save" onclick="save()">
+              <i class="fa fa-bookmark-o"></i>
+            </div>
+          </div>
+
+          <div class="post-likes">
+            <i class="fa fa-heart"></i>
+            <span id="like-count">0</span> likes
+          </div>
+
+          <div class="post-description">
+            <div class="user_name">user_name</div>
+            <div class="description">
+              your title here <span class="hash-tag">#hashtag</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>  
+</body>
+</html>
