@@ -90,12 +90,22 @@ class Post {
               ${this._description} <span class="hash-tag">${this._hashtag}</span>
             </div>`;
 
+    const postComments = document.createElement("div");
+    postComments.className = "post-comments";
+    postComments.innerHTML = `
+            <div class="comments-list" id="comments-list-${this._id}"></div>
+              <div class="comment-input">
+                <input type="text" id="comment-input-${this._id}" placeholder="Add a comment..." />
+                <button id="comment-submit-${this._id}">Post</button>
+              </div>`;
+
     postContainer.append(
       postHeader,
       postImage,
       postIcons,
       postLike,
-      postDescription
+      postDescription,
+      postComments
     );
 
     const mainContainer = document.getElementById("container-position");
@@ -118,6 +128,11 @@ class Post {
       followButton.addEventListener("click", () => this.follow());
     }
     
+    const commentButton = document.querySelector(`#comment-submit-${this._id}`);
+    if (commentButton) {
+      commentButton.addEventListener("click", () => this.addComment());
+    }
+
     return postContainer;
   }
 
@@ -163,6 +178,27 @@ class Post {
     icon.innerHTML = this._isFollowed ? "Follow" : "Following";
 
     this._isFollowed = !this._isFollowed;
+  }
+
+  addComment() {
+    const commentInput = document.getElementById(`comment-input-${this._id}`) as HTMLInputElement;
+    const commentsList = document.getElementById(`comments-list-${this._id}`);
+
+    if (!commentInput || !commentsList) return;
+
+    const commentText = commentInput.value.trim();
+    if (commentText) {
+      // Cria um novo elemento de comentário
+      const commentElement = document.createElement("div");
+      commentElement.className = "comment";
+      commentElement.innerText = commentText;
+
+      // Adiciona o comentário à lista de comentários
+      commentsList.appendChild(commentElement);
+
+      // Limpa o campo de entrada de comentário
+      commentInput.value = "";
+    }
   }
 }
 
