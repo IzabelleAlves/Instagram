@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container-position {
+#container-position {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,6 +88,7 @@
 .post-icons > div {
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 
 .post-likes {
@@ -122,6 +123,7 @@
 
 .liked {
   color: red;
+  cursor: pointer;
 }
 
 .saved {
