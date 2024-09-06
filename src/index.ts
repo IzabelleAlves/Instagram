@@ -87,7 +87,7 @@ class Post {
     postDescription.className = "post-description";
     postDescription.innerHTML = `<div class="user_name">username</div>
             <div class="description">
-              ${this._description} <span class="hash-tag">${this._hashtag}</span>
+              ${this._description} <span class="hash-tag">#${this._hashtag}</span>
             </div>`;
 
     const postComments = document.createElement("div");
