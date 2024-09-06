@@ -1,14 +1,12 @@
 import { faker } from "@faker-js/faker";
 import { v4 as randomUUID } from "uuid"; // npm i --save-dev @types/uuid
 
-// Todas as classes começam com letra maiúscula
-
 class Post {
-  // criando atributos e definindo eles como privados, pois atributos declarados privados não podem ser acessados e modificados
-  private _userName: string; // usar o underscore (underline) para nomear atributos privados
-  private _description: string; // atributo privado
-  private _createdAt: Date = new Date(); // atributo privado
-  private _numberOfLikes: number = 0; // atributo privado
+  
+  private _userName: string; 
+  private _description: string; 
+  private _createdAt: Date = new Date(); 
+  private _numberOfLikes: number = 0; 
   private _hashtag: string;
   private _id: string = randomUUID();
   private _isLiked: boolean = false;
@@ -17,7 +15,6 @@ class Post {
   private _avatarUrl: string;
   private _imageUrl: string;
 
-  // criando um construtor para "montar" o objeto post
   constructor(
     userName: string,
     avatarUrl: string,
@@ -25,10 +22,10 @@ class Post {
     description: string,
     hashtag: string
   ) {
-    this._userName = userName; // inicialização da propriedade userName
-    this._description = description; // inicialização da propriedade titulo
+    this._userName = userName; 
+    this._description = description; 
     this._avatarUrl = avatarUrl;
-    this._imageUrl = imageUrl; // inicialização do número de curtidas com 0
+    this._imageUrl = imageUrl; 
     this._hashtag = hashtag;
   }
 
@@ -36,7 +33,6 @@ class Post {
     const postContainer = document.createElement("div");
     postContainer.className = "post-container";
 
-    // header
     const postHeader = document.createElement("div");
     postHeader.className = "post-header";
     postHeader.innerHTML = `
@@ -55,7 +51,6 @@ class Post {
               <div>...</div>
             </div>`;
 
-    // imagem
     const postImage = document.createElement("div");
     postImage.className = "post-image";
     postImage.innerHTML = `<img
@@ -185,5 +180,3 @@ for (let i = 1; i <= 15; i++) {
   post.render();
   posts.push(post);
 }
-
-// console.log(posts);
