@@ -111,12 +111,14 @@
 }
 
 .post-image {
-  /* border: 1px solid black; */
   flex: 1;
+  overflow: hidden;
 }
 
 .post-image img {
-  object-fit: cover;
+  /* object-fit: cover; */
+  /* display: block; */
+  position: relative;
   height: 100%;
   width: 100%;
 }
@@ -133,4 +135,8 @@
 .followed-style {
   color: #fff;
   background-color: #059ec4;
+}
+
+.comment-input {
+  color: #059ec4;
 }
