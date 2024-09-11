@@ -139,10 +139,10 @@ class Post {
     postComments.className = "post-comments";
     postComments.innerHTML = `
       <div class="comments-list" id="comments-list-${this._id}"></div>
-      <div class="comment-input">
-        <input type="text" id="comment-input-${this._id}" placeholder="Add a comment..." />
-        <button id="comment-submit-${this._id}">Post</button>
-      </div>
+        <div class="comment-input">
+          <input type="text" id="comment-input-${this._id}" placeholder="Add a comment..." />
+          <button id="comment-submit-${this._id}">Post</button>
+        </div>
     `;
 
     postContainer.append(
