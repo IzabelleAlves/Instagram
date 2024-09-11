@@ -2,11 +2,11 @@ import { faker } from "@faker-js/faker";
 import { v4 as randomUUID } from "uuid"; // npm i --save-dev @types/uuid
 
 class Story {
-  private _avatarStory: string;
+private _avatarUrl: string;
   private _userNameStory: string;
 
   constructor(avatarStory: string, userNameStory: string) {
-    this._avatarStory = avatarStory;
+    this._avatarUrl = avatarStory;
     this._userNameStory = userNameStory;
   }
 

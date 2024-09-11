@@ -47,10 +47,14 @@
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-top-color: #fe045e;
+    border-right-color: #fe223d;
+    border-left-color: #c703cf;
+    border-bottom-color: #8f23f5;
+    border-radius: 50%;
 }
 
 .avatar img {
@@ -68,8 +72,6 @@
   color: #059ec4;
   cursor: pointer;
 }
-
-/* usando o space-between para alinhas os icones */
 
 .post-icons {
   font-size: 24px;
@@ -137,6 +139,21 @@
   background-color: #059ec4;
 }
 
+.follow-options .follow {
+  border: 1px solid #059ec4;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 10px;
+  color: #059ec4;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para background e cor */
+}
+
+.follow-options .follow.followed-style {
+  color: #fff;
+  background-color: #28afd1;
+}
+
 .comment-input {
   color: #059ec4;
 }
@@ -174,4 +191,25 @@ textarea:focus {
 
 .hidden {
   display: none; /* Ou use visibility: hidden; se preferir */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.heart.pulse {
+  animation: pulse 0.6s ease;
 }

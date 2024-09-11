@@ -64,7 +64,7 @@ class Post {
     postIcons.innerHTML = `
       <div>
         <div id="btn-like-${this._id}">
-          <i class="fa fa-heart-o"></i>
+          <i class="heart fa fa-heart-o"></i>
         </div>
         <div>
           <i class="fa fa-comment-o"></i>
@@ -160,15 +160,21 @@ class Post {
     const icon = button?.querySelector("i");
     let likeCountElement = document.getElementById(`like-count-${this._id}`);
     if (!icon || !likeCountElement) return;
+  
+  icon.classList.toggle("fa-heart");
+  icon.classList.toggle("liked");
+  icon.classList.toggle("fa-heart-o");
 
-    icon.classList.toggle("fa-heart");
-    icon.classList.toggle("liked");
-    icon.classList.toggle("fa-heart-o");
+  this._numberOfLikes += this._isLiked ? -1 : 1;
+  likeCountElement.innerText = this._numberOfLikes.toString();
+  this._isLiked = !this._isLiked;
 
-    this._numberOfLikes += this._isLiked ? -1 : 1;
-    likeCountElement.innerText = this._numberOfLikes.toString();
-    this._isLiked = !this._isLiked;
-  }
+  icon.classList.add("pulse");
+  setTimeout(() => {
+    icon.classList.remove("pulse");
+  }, 600);
+}
+  
 
   save() {
     const button = document.getElementById(`btn-save-${this._id}`);
