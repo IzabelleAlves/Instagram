@@ -4,7 +4,7 @@
 }
 
 .sidebar {
-  background-color: beige;
+  background-color: white;
   display: flex;
   flex-direction: column;
   position: fixed; /* Fixa a sidebar em relação ao viewport */
@@ -81,7 +81,7 @@
   color: #000; 
   padding: 20px;
   font-family: "Roboto", sans-serif;
-  background-color: beige;
+  background-color: white;
 }
 
 .sugest-top {

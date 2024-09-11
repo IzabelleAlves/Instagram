@@ -1,49 +1,6 @@
 import { faker } from "@faker-js/faker";
 import { v4 as randomUUID } from "uuid"; // npm i --save-dev @types/uuid
 
-class Story {
-  private _avatarStory: string;
-  private _userNameStory: string;
-
-  constructor(avatarStory: string, userNameStory: string) {
-    this._avatarStory = avatarStory;
-    this._userNameStory = userNameStory;
-  }
-
-  createStoryBar() {
-    const storyBar = document.createElement("div");
-    storyBar.className = "story-bar"; // Adicione uma classe para estilização
-
-    storyBar.innerHTML = `
-      <div class="story">
-          <div class="storyImage">
-          <img
-            src="https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814080_640.png"
-          />
-          </div>
-      </div>
-    `;
-
-    // Adiciona a barra de stories ao contêiner da barra inicial
-
-    const barraInicial = document.getElementById("barraInicial");
-    if (barraInicial) {
-      barraInicial.appendChild(storyBar);
-    }
-  }
-}
-// Crie a barra de stories quando a página carregar
-const stories: Story[] = [];
-
-for (let i = 1; i <= 15; i++) {
-  const userNameStory = faker.person.firstName();
-  const avatarStory = faker.image.avatar();
-
-  const story = new Story(userNameStory, avatarStory);
-  story.createStoryBar();
-  stories.push(story);
-}
-
 class Post {
   private _userName: string;
   private _description: string;
@@ -138,12 +95,12 @@ class Post {
     const postComments = document.createElement("div");
     postComments.className = "post-comments";
     postComments.innerHTML = `
-      <div class="comments-list" id="comments-list-${this._id}"></div>
-        <div class="comment-input">
-          <input type="text" id="comment-input-${this._id}" placeholder="Add a comment..." />
-          <button id="comment-submit-${this._id}">Post</button>
-        </div>
-    `;
+              <div class="comments-list" id="comments-list-${this._id}"></div>
+                <div class="comment-input">
+                  <textarea id="comment-input-${this._id}" placeholder="Add a comment..." rows="3"></textarea>
+                  <div class="post-comment hidden" id="comment-submit-${this._id}">Post</div>
+                </div>
+            `;
 
     postContainer.append(
       postHeader,
@@ -174,11 +131,27 @@ class Post {
       followButton.addEventListener("click", () => this.follow());
     }
 
-    const commentButton = document.querySelector(`#comment-submit-${this._id}`);
-    if (commentButton) {
+    const commentInput = document.getElementById(
+      `comment-input-${this._id}`
+    ) as HTMLTextAreaElement;
+    const commentButton = document.getElementById(`comment-submit-${this._id}`);
+
+    if (commentInput && commentButton) {
+      // Adicione um evento de input para o textarea
+      commentInput.addEventListener("input", () => {
+        // Verifique o valor do textarea
+        if (commentInput.value.trim() === "") {
+          // Esconda o botão se o textarea estiver vazio
+          commentButton.classList.add("hidden");
+        } else {
+          // Mostre o botão se o textarea contiver algum texto
+          commentButton.classList.remove("hidden");
+        }
+      });
+
+      // Adicione o evento de clique no botão de postagem
       commentButton.addEventListener("click", () => this.addComment());
     }
-
     return postContainer;
   }
 
@@ -247,7 +220,7 @@ for (let i = 1; i <= 15; i++) {
   const userName = faker.person.firstName();
   const avatarURL = faker.image.avatar();
   const imageUrl = faker.image.urlLoremFlickr();
-  const description = faker.lorem.word();
+  const description = faker.lorem.sentences(2);
   const hashtagWord = faker.lorem.word();
 
   const post = new Post(userName, avatarURL, imageUrl, description, hashtagWord);
