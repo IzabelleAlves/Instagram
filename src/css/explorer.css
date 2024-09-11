@@ -1,0 +1,29 @@
+#container-alignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-principal {
+  width: 800px; /* Largura do contêiner principal */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+  justify-content: center; /* Ajusta o espaçamento entre os itens */
+  margin-top: 30px;
+  gap: 3px; /* Espaço entre as imagens */
+  background-color: #fff;
+}
+
+.image-blocks {
+  height: 300px;
+  width: calc(
+    (100% / 3) - 20px
+  ); /* Ajusta a largura para 3 imagens por linha, considerando o gap */
+}
+
+.image-blocks img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

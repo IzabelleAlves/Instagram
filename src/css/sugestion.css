@@ -32,6 +32,19 @@
     cursor: pointer;
   }
   
+  .follow.followed-style {
+    color: #fff;
+    background-color: #28afd1;
+  }
+  .followed-style {
+    border: 1px solid #059ec4;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 10px;
+    color: #059ec4;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }
   .developer {
     color: rgb(151, 151, 151);
     font-size: 12px;

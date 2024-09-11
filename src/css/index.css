@@ -146,7 +146,7 @@
   font-size: 10px;
   color: #059ec4;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para background e cor */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .follow-options .follow.followed-style {

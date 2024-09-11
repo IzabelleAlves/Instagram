@@ -3,11 +3,11 @@ import { v4 as randomUUID } from "uuid"; // npm i --save-dev @types/uuid
 
 class Story {
 private _avatarUrl: string;
-  private _userNameStory: string;
+  private _userName: string;
 
-  constructor(avatarStory: string, userNameStory: string) {
+  constructor(avatarStory: string, userName: string) {
     this._avatarUrl = avatarStory;
-    this._userNameStory = userNameStory;
+    this._userName = userName;
   }
 
   createStoryBar() {
@@ -21,6 +21,7 @@ private _avatarUrl: string;
             src="https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814080_640.png"
           /> 
           </div>
+
       </div>
     `;
 
@@ -36,10 +37,10 @@ private _avatarUrl: string;
 const stories: Story[] = [];
 
 for (let i = 1; i <= 10; i++) {
-  const userNameStory = faker.person.firstName();
-  const avatarStory = faker.image.avatar();
+  const userName = faker.person.firstName();
+  const avatarUrl = faker.image.avatar();
 
-  const story = new Story(userNameStory, avatarStory);
+  const story = new Story(userName, avatarUrl);
   story.createStoryBar();
   stories.push(story);
 }

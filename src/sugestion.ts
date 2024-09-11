@@ -38,7 +38,6 @@ class Suggestion {
       userSuggestions.appendChild(suggestions);
     }
 
-    // btn follow para as sugestões
     const followBtn = document.querySelector(`#btnfollow-${this._id}`);
     if (followBtn) {
       followBtn.addEventListener("click", () => this.followSuggestion());
@@ -47,7 +46,6 @@ class Suggestion {
     return suggestions;
   }
 
-  // método follow para as sugestões
   followSuggestion() {
     const button = document.querySelector(`#btnfollow-${this._id}`);
 
