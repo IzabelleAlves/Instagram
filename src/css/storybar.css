@@ -1,66 +1,65 @@
-  #barraInicial {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    box-sizing: border-box; 
+#barraInicial {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box; 
+}
+
+.story-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.story {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin: 3px;
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%;
+  position: relative; 
+  overflow: hidden;
+}
+
+.story img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.story::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid;
+  border-top-color: #fe045e;
+  border-right-color: #fe223d;
+  border-bottom-color: #c703cf;
+  border-left-color: #8f23f5;
+  box-sizing: border-box;
+  animation: rotateBorder 5s ease;
+  z-index: 0;
+}
+
+/* .story span {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  display: block;
+} */
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .story-bar {
-    display: flex;
-    gap: 10px;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .story {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    padding: 5px;
-    width: 80px; 
-    height: 80px; 
-    border-radius: 50%;
-    position: relative; 
-    overflow: hidden;
-  }
-  
-  .story img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  .story::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 3px solid;
-    border-top-color: #fe045e;
-    border-right-color: #fe223d;
-    border-bottom-color: #c703cf;
-    border-left-color: #8f23f5;
-    box-sizing: border-box;
-    animation: rotateBorder 5s ease;
-    z-index: -1;
-  }
-  
-  .story span {
-    margin-top: 5px;
-    font-size: 12px;
-    color: #333;
-    text-align: center;
-    display: block;
-  }
-  
-  @keyframes rotateBorder {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
