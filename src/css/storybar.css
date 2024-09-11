@@ -1,4 +1,4 @@
-#barraInicial {
+  #barraInicial {
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -18,19 +18,33 @@
     width: 80px; 
     height: 80px; 
     border-radius: 50%;
+    position: relative; 
+    overflow: hidden;
   }
   
   .story img {
-    border-radius: 50%;
-    border: 2px solid;
-    border-top-color: #fe045e;
-    border-right-color: #fe223d;
-    border-left-color: #c703cf;
-    border-bottom-color: #8f23f5;
-    border-radius: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid;
+    border-top-color: #fe045e;
+    border-right-color: #fe223d;
+    border-bottom-color: #c703cf;
+    border-left-color: #8f23f5;
+    box-sizing: border-box;
+    animation: rotateBorder 5s ease;
+    z-index: -1;
   }
   
   .story span {
@@ -39,5 +53,14 @@
     color: #333;
     text-align: center;
     display: block;
+  }
+  
+  @keyframes rotateBorder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   

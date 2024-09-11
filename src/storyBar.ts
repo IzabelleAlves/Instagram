@@ -19,7 +19,7 @@ private _avatarUrl: string;
           <div class="storyImage">
           <img
             src="https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814080_640.png"
-          />
+          /> 
           </div>
       </div>
     `;
