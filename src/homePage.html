@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/explorer.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/homePage.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,7 +23,7 @@
     <title>Photogram</title>
   </head>
   <body>
-    <main id="main">
+    <main>
       <div class="sidebar">
         <div class="logo">
           <h1>Photogram</h1>
@@ -42,7 +42,7 @@
             </li>
             <li class="list-item">
               <i class="fa fa-compass fa-lg" aria-hidden="true"></i>
-              <a class="list-style" href="./explore.html"
+              <a class="list-style" href="./src/explore.html"
                 ><span>Explorar</span></a
               >
             </li>
@@ -71,11 +71,40 @@
         </nav>
       </div>
 
-      <div id="container-alignment">
-        <div id="container-principal" class="container-principal"></div>
+      <div id="homePage">
+        <div class="avatar">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQFlR2o9nmgq3A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713298906900?e=1731542400&v=beta&t=pfQ1tCOeS3wGRqrmi0f8NGj1pWFhaWimriLgSjTfcSE"
+            alt=""
+          />
+        </div>
       </div>
+      <section class="section-bio">
+        <div class="bio">
+          <div class="user-info">
+            <h2>maria_</h2>
+            <button class="edit-profile-btn">Editar perfil</button>
+            <div class="bio-options">
+              <span>Itens arquivados</span>
+            </div>
+            <div class="settings-icon">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+
+            <div class="profile-info">
+              <div>6 publicações</div>
+              <div>620 seguidores</div>
+              <div>564 seguindo</div>
+            </div>
+            <div class="bio-descricao">Mariinha</div>
+          </div>
+        </div>
+      
+    </section>
     </main>
 
-    <script type="module" src="./explore.ts"></script>
+    <!-- FALTA LINKAR AS PAGINAS EEE TERMINAR A HOMEPAGE EM TODOS OS ARQUIVOS -->
+     
+    <!-- <script type="module" src=""></script> -->
   </body>
 </html>
