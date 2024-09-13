@@ -5,13 +5,14 @@
 }
 
 .container-principal {
-  width: 800px; /* Largura do contêiner principal */
+  width: 95%;
+  padding-left: 250px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
-  justify-content: center; /* Ajusta o espaçamento entre os itens */
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 30px;
-  gap: 3px; /* Espaço entre as imagens */
+  gap: 3px; 
   background-color: #fff;
 }
 
@@ -19,11 +20,12 @@
   height: 300px;
   width: calc(
     (100% / 3) - 20px
-  ); /* Ajusta a largura para 3 imagens por linha, considerando o gap */
+  );
 }
 
 .image-blocks img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  border-radius: 0;
 }

@@ -8,6 +8,7 @@
   padding: 50px;
 }
 
+/* Profile */
 .avatar-profile {
   width: 200px;
   height: 200px;
@@ -87,4 +88,58 @@ border-radius: 50%;
 .bio-descricao {
   font-size: 14px;
   line-height: 1.5;
+}
+
+.barra-navegacao {
+  display: flex;
+  border-top: 1px solid #4F4F4F;
+  gap: 30px;
+  color: #555555;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  padding-left: 210px;
+  cursor: pointer;
+}
+
+/* Feed */
+
+#container-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 180px;
+}
+
+#container-profile {
+  width: 95%;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin-top: 0px;
+  gap: 3px;
+  background-color: #fff;
+}
+
+.image-blocks {
+  height: 300px;
+  width: calc(
+    (100% / 3) - 20px
+  ); 
+}
+
+.image-blocks img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+}
+
+.image-blocks {
+  position: relative;
+  display: inline-block;
 }
