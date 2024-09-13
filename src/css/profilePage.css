@@ -121,25 +121,57 @@ border-radius: 50%;
   flex-wrap: wrap;
   justify-content: center; 
   margin-top: 0px;
-  gap: 3px;
-  background-color: #fff;
+  gap: 4px;
 }
 
 .image-blocks {
   height: 300px;
-  width: calc(
-    (100% / 3) - 20px
-  ); 
+  width: calc((100% / 3) - 6px); /* Ajustado para espaço entre as fotos */
+  position: relative;
+  display: flex; /* Adiciona flex para centralizar o conteúdo dentro do bloco */
 }
 
-.image-blocks img {
-  object-fit: cover;
+.photo-overlay {
+  position: relative;
   height: 100%;
   width: 100%;
-  border-radius: 0;
 }
 
-.image-blocks {
-  position: relative;
-  display: inline-block;
+.photo-overlay img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: opacity 0.3s ease; 
+}
+
+.overlay-content {
+  display: none; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.photo-overlay:hover .overlay-content {
+  display: flex; 
+}
+
+.photo-overlay:hover img {
+  opacity: 0.6;
 }
