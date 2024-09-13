@@ -1,0 +1,90 @@
+#profilePage {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Define duas colunas de largura igual */
+  grid-template-rows: auto;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.avatar-profile {
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+  border-top-color: #fe045e;
+  border-right-color: #fe223d;
+  border-left-color: #c703cf;
+  border-bottom-color: #8f23f5;
+  border-radius: 50%;
+  justify-self: end;
+}
+
+.avatar-profile img {
+object-fit: cover;
+height: 100%;
+width: 100%;
+border-radius: 50%;
+}
+
+.section-bio{
+  /* display: grid; */
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.bio {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.user-info {
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.user-info h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.edit-profile-btn, .bio-options {
+  padding: 5px 16px;
+  border: 0px;
+  background-color:  #f0f0f0;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.edit-profile-btn:hover, .bio-options:hover {
+  background-color: #e0e0e0; 
+}
+
+.settings-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.profile-info {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.profile-info div {
+  font-weight: 400;
+}
+
+.profile-info div strong {
+  font-weight: bold;
+}
+
+.bio-descricao {
+  font-size: 14px;
+  line-height: 1.5;
+}

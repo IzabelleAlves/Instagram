@@ -17,6 +17,11 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .sugest-top a {
+    text-decoration: none;
+    color: black;
+  }
   
   .user-sugestions {
     display: flex;

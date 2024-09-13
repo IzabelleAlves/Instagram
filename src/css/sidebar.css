@@ -1,20 +1,21 @@
 * {
   margin: 0px;
   padding: 0px;
+  border-radius: 8px;
 }
 
 .sidebar {
   background-color: white;
   display: flex;
   flex-direction: column;
-  position: fixed; /* Fixa a sidebar em relação ao viewport */
-  top: 0; /* Fica no topo */
-  left: 0; /* Fica no lado esquerdo */
-  width: 250px; /* Largura da sidebar */
-  height: 100vh; /* Altura da sidebar igual à altura do viewport */
-  color: #000; /* Cor do texto */
-  padding: 20px; /* Espaçamento interno */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 250px; 
+  height: 100vh;
+  color: #000; 
+  padding: 20px; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
 }
 
 .logo {
@@ -24,20 +25,32 @@
   font-family: "roboto", sans-serif;
 }
 
-/* Estilo dos links da sidebar */
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+}
+
 .sidebar ul {
-  list-style: none; /* Remove os marcadores da lista */ /* Remove o preenchimento da lista */
-  padding-top: 10px; /* Remove o preenchimento da lista */
+  list-style: none; 
+  padding-top: 10px; /
 }
 
 .sidebar ul li {
   margin-bottom: 10px;
-  padding: 20px; /* Espaçamento entre itens da lista */
+  padding: 20px;
 }
 
-.sidebar a {
-  text-decoration: none;
-  color: #000;
+.sidebar ul li {
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #ffffff; /* Cor de fundo inicial */
+  opacity: 0.8; 
+  transition: opacity 0.3s ease, background-color 0.3s ease; 
+}
+
+.sidebar ul li:hover {
+  opacity: 1; 
+  background-color: #f0f0f0;
 }
 
 .pd {
@@ -70,4 +83,3 @@
 .align {
   align-items: center;
 }
-

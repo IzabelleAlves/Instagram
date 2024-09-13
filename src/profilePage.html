@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
-    <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" href="./css/profilePage.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -32,7 +32,7 @@
           <ul class="list">
             <li class="list-item">
               <i class="fa fa-home fa-lg" aria-hidden="true"></i>
-              <a class="list-style" href="./index.html"
+              <a class="list-style" href="/index.html"
                 ><span>Página Inicial</span></a
               >
             </li>
@@ -42,7 +42,7 @@
             </li>
             <li class="list-item">
               <i class="fa fa-compass fa-lg" aria-hidden="true"></i>
-              <a class="list-style" href="./src/explore.html"
+              <a class="list-style" href="./explore.html"
                 ><span>Explorar</span></a
               >
             </li>
@@ -65,32 +65,30 @@
                   alt=""
                 />
               </div>
-              <span>Perfil</span>
+              <a href="profilePage.html">Perfil</a>
             </li>
           </ul>
         </nav>
       </div>
 
-      <div id="homePage">
-        <div class="avatar">
+      <div id="profilePage">
+        <div class="avatar-profile">
           <img
             src="https://media.licdn.com/dms/image/v2/D4D03AQFlR2o9nmgq3A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713298906900?e=1731542400&v=beta&t=pfQ1tCOeS3wGRqrmi0f8NGj1pWFhaWimriLgSjTfcSE"
-            alt=""
+            alt="Profile Photo" title="Profile Photo"
           />
         </div>
-      </div>
-      <section class="section-bio">
-        <div class="bio">
-          <div class="user-info">
-            <h2>maria_</h2>
-            <button class="edit-profile-btn">Editar perfil</button>
-            <div class="bio-options">
-              <span>Itens arquivados</span>
-            </div>
-            <div class="settings-icon">
-              <i class="fa fa-cog" aria-hidden="true"></i>
-            </div>
-
+        <section>
+        <div class="user-info">
+          <h2>maria_</h2>
+          <button class="edit-profile-btn">Editar perfil</button>
+          <button class="bio-options">
+          Itens arquivados
+          </button>
+          <div class="settings-icon">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+          </div>
+          <div class="bio">
             <div class="profile-info">
               <div>6 publicações</div>
               <div>620 seguidores</div>
@@ -98,13 +96,12 @@
             </div>
             <div class="bio-descricao">Mariinha</div>
           </div>
+        </section>
         </div>
-      
-    </section>
-    </main>
+      </div>
+    </main>     
 
-    <!-- FALTA LINKAR AS PAGINAS EEE TERMINAR A HOMEPAGE EM TODOS OS ARQUIVOS -->
-     
+    <!-- TERMINAR A PAG DO PERFIL -->
     <!-- <script type="module" src=""></script> -->
   </body>
 </html>
