@@ -1,6 +1,6 @@
 #profilePage {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Define duas colunas de largura igual */
+  grid-template-columns: 1fr 1fr; 
   grid-template-rows: auto;
   align-items: flex-start;
   justify-content: center;
@@ -29,7 +29,6 @@ border-radius: 50%;
 }
 
 .section-bio{
-  /* display: grid; */
   grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: repeat(2, 1fr);
 }
@@ -51,17 +50,15 @@ border-radius: 50%;
 .user-info {
   display: flex;
   gap: 20px;
-  /* padding-left: 20px; */
 }
 
 .user-info h2 {
   font-size: 28px;
   font-weight: 400;
-  /* margin-right: 20px; */
 }
 
 .edit-profile-btn, .bio-options {
-  padding: 5px 16px;
+  padding: 5px 20px;
   border: 0px;
   background-color:  #f0f0f0;
   border-radius: 8px;
@@ -129,9 +126,9 @@ border-radius: 50%;
 
 .image-blocks {
   height: 300px;
-  width: calc((100% / 3) - 6px); /* Ajustado para espaço entre as fotos */
+  width: calc((100% / 3) - 6px); 
   position: relative;
-  display: flex; /* Adiciona flex para centralizar o conteúdo dentro do bloco */
+  display: flex; 
 }
 
 .photo-overlay {

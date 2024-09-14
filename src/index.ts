@@ -98,7 +98,7 @@ class Post {
               <div class="comments-list" id="comments-list-${this._id}"></div>
                 <div class="comment-input">
                   <textarea id="comment-input-${this._id}" placeholder="Add a comment..." rows="3"></textarea>
-                  <div class="post-comment hidden" id="comment-submit-${this._id}">Post</div>
+                  <div class="post-comment" id="comment-submit-${this._id}">Post</div>
                 </div>
             `;
 
@@ -209,7 +209,16 @@ class Post {
       // Cria um novo elemento de comentário
       const commentElement = document.createElement("div");
       commentElement.className = "comment";
-      commentElement.innerText = commentText;
+      // Adiciona a foto do avatar ao comentário
+      commentElement.innerHTML = `
+        <div class="comment-header">
+          <div class="comment-avatar">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFlR2o9nmgq3A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713298906900?e=1731542400&v=beta&t=pfQ1tCOeS3wGRqrmi0f8NGj1pWFhaWimriLgSjTfcSE" alt="${this._userName}'s avatar"/>
+          </div>
+          <span class="comment-user">maria_</span>
+        </div>
+        <div class="comment-text">${commentText}</div>
+      `;
 
       // Adiciona o comentário à lista de comentários
       commentsList.appendChild(commentElement);

@@ -13,7 +13,6 @@
 
 .post-container {
   display: flex;
-  /* border: 1px solid black; */
   width: 400px;
   height: 550px;
   margin: 20px;
@@ -26,9 +25,7 @@
 .post-header {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: space-between;
-  /* gap: 10px; */
 }
 
 .avatar-user {
@@ -79,11 +76,7 @@
   justify-content: space-between;
 }
 
-#btn-like {
-  cursor: pointer;
-}
-
-#btn-save {
+#btn-like, #btn-save {
   cursor: pointer;
 }
 
@@ -157,18 +150,18 @@
 }
 
 textarea {
-  width: 90%; /* ou qualquer largura específica, como 300px */
-  height: 20px; /* ou qualquer altura específica */
-  box-sizing: border-box; /* Inclui padding e borda na largura e altura */
+  width: 90%; 
+  height: 20px; 
+  box-sizing: border-box; 
   border: none;
   resize: none;
   margin-top: 10px;
 }
 
 textarea:focus {
-  border-color: none; /* Borda azul quando em foco */
-  outline: none; /* Remove o contorno padrão do navegador */
-  background-color: #fff; /* Cor de fundo quando em foco */
+  border-color: none;
+  outline: none; 
+  background-color: #fff; 
 }
 
 .post-comment {
@@ -176,19 +169,46 @@ textarea:focus {
   cursor: pointer;
 }
 
+.comment {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
 .comment-input {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 14px;
+  /* font-size:20px; */
 }
 
-.comment {
-  font-size: 14px;
+.comment-avatar {
+  margin-right: 6px;
 }
 
-.hidden {
-  display: none; /* Ou use visibility: hidden; se preferir */
+.comment-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+}
+
+.comment-user {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.comment-text {
+  margin-top: 5px;
 }
 
 @keyframes pulse {

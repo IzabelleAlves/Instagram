@@ -31,7 +31,18 @@ class Explore {
   renderExplore() {
     const explore = document.createElement("div");
     explore.className = "image-blocks";
-    explore.innerHTML = `<img src="${this._imageUrl}" alt="" />`;
+    explore.innerHTML = `<div class="photo-overlay">
+        <img src="${this._imageUrl}" alt="" />
+        <div class="overlay-content">
+          <button class="like-btn">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          </button>
+          <button class="comment-btn">
+          <i class="fa fa-comment" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>  
+    `;
 
     const findExplore = document.getElementById("container-principal");
     if (findExplore) {
