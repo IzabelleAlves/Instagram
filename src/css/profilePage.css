@@ -35,21 +35,29 @@ border-radius: 50%;
 }
 
 .bio {
-  /* display: flex; */
   flex-direction: column;
   justify-content: flex-start;
   gap: 15px;
+  margin-top: 20px;
+}
+
+.bio p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .user-info {
+  display: flex;
   gap: 20px;
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 
 .user-info h2 {
   font-size: 28px;
   font-weight: 400;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .edit-profile-btn, .bio-options {
@@ -83,11 +91,6 @@ border-radius: 50%;
 
 .profile-info div strong {
   font-weight: bold;
-}
-
-.bio-descricao {
-  font-size: 14px;
-  line-height: 1.5;
 }
 
 .barra-navegacao {
