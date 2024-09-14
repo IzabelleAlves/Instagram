@@ -36,7 +36,7 @@ private _avatarUrl: string;
 // Crie a barra de stories quando a página carregar
 const stories: Story[] = [];
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 25; i++) {
   const userName = faker.person.firstName();
   const avatarUrl = faker.image.avatar();
 
