@@ -41,7 +41,6 @@ _Visualização do post_
 _Página do perfil_
 ![](imagens-projeto/image-4.png)
 Na página no perfil do usuário é possível visualizar o nome do usuário, opções de editar perfil, número de seguidores e outras funcionalidades. A cada vez que o mouse passar em cima da imagem, as funções de curtir e comentar aparecerão.
-Desafios e Aprendizados.
 
 A aba explorar, presente na esquerda, apresenta diversos posts.
 ![](imagens-projeto/image-5.png)
