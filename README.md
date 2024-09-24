@@ -48,7 +48,8 @@ Como dev:
 _Tela inicial_
 ![](image.png)
 A tela inicial mostra os stories, sugestão de perfis e funcionalidades da sidebar. Todas as publicações são interativas, podendo você curtir, comentar, salvar a publicação e seguir o usuário que fez o post.
-![](image-1.png) Teste
+![](image-2.png) ![](image-3.png)
+
 Desafios e Aprendizados
 O desenvolvimento do Photogram foi uma oportunidade incrível de aprendizado, principalmente em relação ao uso de animações CSS e a criação de uma interface parecida com o Instagram. Trabalhar com Vite para a compilação automática também tornou o processo mais ágil e eficiente.
 
