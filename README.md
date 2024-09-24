@@ -29,19 +29,19 @@ Como dev:
 ## Interfaces
 
 _Tela inicial_
-![](imagens-projeto.image.png)
+![](imagens-projeto/image.png)
 <br>A tela inicial mostra os stories, sugestão de perfis e funcionalidades da sidebar. Todas as publicações são interativas, podendo você curtir, comentar, salvar a publicação e seguir o usuário que fez o post.
 _Visualização do post_
 | Post 1 | Post 2 |
 |-------------------------|-------------------------|
-| ![](image-2.png) | ![](image-3.png)|
+| ![](imagens-projeto/image-2.png) | ![](imagens-projeto/image-3.png)|
 <br>Na página no perfil do usuário é possível visualizar o nome do usuário, opções de editar perfil, número de seguidores e outras funcionalidades. A cada vez que o mouse passar em cima da imagem, as funções de curtir e comentar aparecerão.
 Desafios e Aprendizados.<br>
 
 _Página do perfil_
-![](image-4.png)
+![](imagens-projeto/image-4.png)
 <br> A aba explorar, presente na esquerda, apresenta diversos posts.
-![](image-5.png)
+![](imagens-projeto/image-5.png)
 
 O desenvolvimento do Photogram foi uma oportunidade incrível de aprendizado, principalmente em relação ao uso de animações CSS e a criação de uma interface parecida com o Instagram. Trabalhar com Vite para a compilação automática também tornou o processo mais ágil e eficiente.
 
