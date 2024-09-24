@@ -38,14 +38,15 @@ _Visualização do post_
 |-------------------------|-------------------------|
 | ![](imagens-projeto/image-2.png) | ![](imagens-projeto/image-3.png)|
 
+_Página do perfil_
+![](imagens-projeto/image-4.png)
 Na página no perfil do usuário é possível visualizar o nome do usuário, opções de editar perfil, número de seguidores e outras funcionalidades. A cada vez que o mouse passar em cima da imagem, as funções de curtir e comentar aparecerão.
 Desafios e Aprendizados.
 
-_Página do perfil_
-![](imagens-projeto/image-4.png)
-<br> A aba explorar, presente na esquerda, apresenta diversos posts.
+A aba explorar, presente na esquerda, apresenta diversos posts.
 ![](imagens-projeto/image-5.png)
 
-O desenvolvimento do Photogram foi uma oportunidade incrível de aprendizado, principalmente em relação ao uso de animações CSS e a criação de uma interface parecida com o Instagram. Trabalhar com Vite para a compilação automática também tornou o processo mais ágil e eficiente.
+**_Entre em contato comigo_**
 
-Esse esboço inclui seções detalhadas para descrever as etapas do projeto. Se você já tem imagens das etapas mencionadas, pode adicioná-las ao repositório e atualizar os links no README.
+- **E-mail**: [izabelle.alvesbl@gmail.com](mailto:izabelle.alvesbl@gmail.com)
+- **LinkedIn**: [Izabelle Alves](https://www.linkedin.com/in/izabellealvess/)
