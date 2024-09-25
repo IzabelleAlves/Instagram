@@ -2,6 +2,25 @@
 
 Photogram é um projeto de interface de uma rede social inspirada no Instagram desktop, com foco na interação do usuário e exibição de fotos. A ideia central é simular as telas do Instagram na sua versão web, incluindo os stories, o próprio perfil do usuário, a barra de navegação lateral, área de sugestões de perfis, navegação entre as páginas e funcionalidades de interação como curtidas, comentários e salvar fotos.
 
+## Interfaces
+
+_Tela inicial_
+![](imagens-projeto/image.png)
+
+A tela inicial mostra os stories, sugestão de perfis e funcionalidades da sidebar. Todas as publicações são interativas, podendo você curtir, comentar, salvar a publicação e seguir o usuário que fez o post.
+
+_Visualização do post_
+| Post 1 | Post 2 |
+|-------------------------|-------------------------|
+| ![](imagens-projeto/image-2.png) | ![](imagens-projeto/image-3.png)|
+
+_Página do perfil_
+![](imagens-projeto/image-4.png)
+Na página no perfil do usuário é possível visualizar o nome do usuário, opções de editar perfil, número de seguidores e outras funcionalidades. A cada vez que o mouse passar em cima da imagem, as funções de curtir e comentar aparecerão.
+
+A aba explorar, presente na esquerda, apresenta diversos posts.
+![](imagens-projeto/image-5.png)
+
 ## Tecnologias Utilizadas
 
 | **Categoria**                      | **Tecnologias**                                                                                                                                                                                                                                                  |
@@ -25,25 +44,6 @@ Como dev:
 ```bash
   npm run dev
 ```
-
-## Interfaces
-
-_Tela inicial_
-![](imagens-projeto/image.png)
-
-A tela inicial mostra os stories, sugestão de perfis e funcionalidades da sidebar. Todas as publicações são interativas, podendo você curtir, comentar, salvar a publicação e seguir o usuário que fez o post.
-
-_Visualização do post_
-| Post 1 | Post 2 |
-|-------------------------|-------------------------|
-| ![](imagens-projeto/image-2.png) | ![](imagens-projeto/image-3.png)|
-
-_Página do perfil_
-![](imagens-projeto/image-4.png)
-Na página no perfil do usuário é possível visualizar o nome do usuário, opções de editar perfil, número de seguidores e outras funcionalidades. A cada vez que o mouse passar em cima da imagem, as funções de curtir e comentar aparecerão.
-
-A aba explorar, presente na esquerda, apresenta diversos posts.
-![](imagens-projeto/image-5.png)
 
 **_Entre em contato comigo_**
 
